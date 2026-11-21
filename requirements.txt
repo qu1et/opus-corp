@@ -1,0 +1,9 @@
+# Зависимости пайплайна (кроме torch: его ставит setup.ps1 с CUDA-индексом)
+numpy
+requests
+tqdm
+sentencepiece
+fasttext-langdetect
+sentence-transformers
+huggingface_hub
+sacrebleu

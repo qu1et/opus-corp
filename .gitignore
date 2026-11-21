@@ -1,0 +1,11 @@
+.venv/
+.cache/
+__pycache__/
+*.pyc
+data/
+logs/
+rand/
+align/
+spm/
+tools/
+report.md
