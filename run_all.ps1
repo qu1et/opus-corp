@@ -1,4 +1,4 @@
-# Обёртка над scripts/run_all.py: все аргументы передаются как есть.
+﻿# Обёртка над scripts/run_all.py: все аргументы передаются как есть.
 # Примеры:
 #   powershell -ExecutionPolicy Bypass -File run_all.ps1
 #   powershell -ExecutionPolicy Bypass -File run_all.ps1 -StageArgs '--stages','1','2'

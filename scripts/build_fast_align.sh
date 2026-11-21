@@ -1,10 +1,11 @@
 #!/usr/bin/bash
 # Сборка fast_align и atools (задача 4) под Windows через MSYS2/MinGW.
 # Запуск из PowerShell:  C:\msys64\usr\bin\bash.exe -lc "bash /d/practice/scripts/build_fast_align.sh"
+# Можно передать каталог назначения первым аргументом: bash build_fast_align.sh /e/tools/fast_align
 set -e
 export PATH=/usr/bin:/bin:/mingw64/bin:/usr/local/bin:$PATH
 
-SRC=/d/practice/tools/fast_align
+SRC=${1:-/d/practice/tools/fast_align}
 mkdir -p "$SRC"
 if [ ! -d "$SRC/.git" ]; then
   git clone --depth 1 https://github.com/clab/fast_align.git "$SRC"
